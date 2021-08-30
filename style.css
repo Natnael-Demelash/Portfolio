@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.active {
+  border-bottom: 2px solid rgb(17, 147, 228);
+}
+
+.logo {
+  cursor: pointer;
+  letter-spacing: 5px;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px 0;
+}
+.logo:hover {
+  color: rgb(17, 147, 228);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  /* background: #fff;
+    box-shadow: 2px 2px 3px rgba(150, 145, 145, 0.822); */
+}
+
+ul {
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #111;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+#home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5em 0;
+  height: 100vh;
+}
+
+#home .info {
+  width: 30%;
+}
+#home img {
+  width: 400px;
+}
+#home h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 20px;
+}
+.info p {
+  font-family: "Lemonada", cursive;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+.btn {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 20px;
+  background: rgb(17, 147, 228);
+  font-family: "Montserrat", sans-serif;
+  margin-right: 20px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.7;
+}
+
+.scroll {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  cursor: pointer;
+  animation: move 1s infinite alternate;
+  margin-bottom: 50px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+#about {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(233, 233, 233, 0.712);
+}
+#about .pi-info {
+  width: 45%
+}
+.pi-info h1 {
+  margin-bottom: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  color: rgb(17, 147, 228);
+}
+
+.pi-info p{
+    font-family: "Lemonada", cursive;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
