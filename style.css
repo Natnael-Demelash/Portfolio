@@ -121,3 +121,10 @@ nav li {
     margin-bottom: 20px;
     font-size: 15px;
 }
+.socila-media{
+    padding: 30px;
+}
+.socila-media img{
+    margin-right: 20px;
+    cursor: pointer;
+}
