@@ -18,9 +18,11 @@
   transition: all .2s ease-out;
 }
 
+
 .active {
   border-bottom: 2px solid rgb(17, 147, 228);
 }
+
 
 .logo {
   cursor: pointer;
@@ -29,8 +31,20 @@
   padding: 5px 0;
   font-size: 22px;
 }
+.logo img{
+  width: 1.6em;
+}
 .logo:hover {
   color: rgb(17, 147, 228);
+}
+
+#menu-btn{
+  font-size: 1.5rem;
+  border-radius: .5rem;
+  color:var(--green);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  display: none;
 }
 
 .heading {
@@ -48,7 +62,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 9%;
+  padding: 8px 9%;
   box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -259,6 +273,94 @@ nav li {
   font-family: "Poppins", sans-serif;
 }
 
+.contact{
+  position: relative;
+  height: 100vh;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(233, 233, 233, 0.712);
+}
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+}
+.contact .container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.container .contactInfo{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box{
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contactInfo .box .icon{
+  min-width: 40px;
+  height: 40px;
+  background: #fff;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+.container .contactInfo .box .text{
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  flex-direction: column;
+}
+
+.contact-form{
+  width: 35%;
+  padding: 20px;
+  background: #fff;
+}
+.contact-form h2{
+  font-size: 30px;
+  font-weight: 300;
+  color: #333;
+}
+
+.contact-form .input-box{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-form .input-box input, textarea{
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+  margin: 5px 0;
+  border: none;
+  border-bottom:  2px solid #333;
+  outline: none;
+  resize: none;
+}
+.contact-form .input-box span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #666;
+}
 .footer{
   height: 70vh;
   background: var(--blue);
@@ -273,17 +375,18 @@ nav li {
   gap:1rem;
 }
 
-.footer .box-container .box h3{
-  font-size: 1rem;
+.footer .box-container h3{
+  font-size: 1.2rem;
   color: #fff;
   padding: 1rem 0; 
-  font-family: "Montserrat", sans-serif;;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
 }
 
 .footer .box-container .box a{
   display: block;
   font-size: 1rem;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.623);
   padding: 1rem 0;
   font-family: "Poppins", sans-serif;
 }
@@ -310,3 +413,10 @@ nav li {
 .footer .credit span{
   color: #fff;
 }
+
+@media (max-width:768px){
+
+  #menu-btn{
+      display: initial;
+  }
+} 
