@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+:root {
+  --blue: rgba(17, 147, 228);
+  --black: #444;
+  --light-color: #777;
+  --box-shadow: 0.5rem 0.5rem 0 rgba(22, 160, 133, 0.2);
+  --text-shadow: 0.3rem 0.4rem 0 rgba(0, 0, 0, 0.2);
+  --border: 0.2rem solid var(--blue);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all .2s ease-out;
 }
 
 .active {
@@ -15,18 +27,35 @@
   letter-spacing: 5px;
   font-family: "Montserrat", sans-serif;
   padding: 5px 0;
+  font-size: 22px;
 }
 .logo:hover {
   color: rgb(17, 147, 228);
+}
+
+.heading {
+  text-shadow: var(--text-shadow);
+  text-transform: uppercase;
+  color: var(--black);
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 22px;
+  /* font-size: 28px; */
 }
 
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 10%;
-  /* background: #fff;
-    box-shadow: 2px 2px 3px rgba(150, 145, 145, 0.822); */
+  padding: 20px 9%;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: #fff;
 }
 
 ul {
@@ -42,6 +71,39 @@ li a {
 nav li {
   display: inline-block;
   padding: 0 15px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 0.8rem;
+  padding: 0.3rem;
+  padding-left: 0.6rem;
+  border: var(--border);
+  border-radius: 0.3rem;
+  box-shadow: var(--box-shadow);
+  color: var(--blue);
+  cursor: pointer;
+  font-size: 0.9rem;
+  background: #fff;
+}
+
+.btn span {
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.5rem;
+  background: var(--blue);
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.btn:hover {
+  background: var(--blue);
+  color: #fff;
+}
+
+.btn:hover span {
+  color: var(--blue);
+  background: #fff;
+  margin-left: 0.8rem;
 }
 
 #home {
@@ -60,12 +122,14 @@ nav li {
 }
 #home h1 {
   font-family: "Montserrat", sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
+  font-size: 28px;
 }
 .info p {
-  font-family: "Lemonada", cursive;
-  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
   margin-bottom: 25px;
+  line-height: 2em;
 }
 .btn {
   text-decoration: none;
@@ -107,24 +171,142 @@ nav li {
   background-color: rgba(233, 233, 233, 0.712);
 }
 #about .pi-info {
-  width: 45%
+  width: 40%;
 }
-.pi-info h1 {
+/* .pi-info h1 {
   margin-bottom: 20px;
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   color: rgb(17, 147, 228);
+} */
+
+.pi-info p {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 2em;
 }
 
-.pi-info p{
-    font-family: "Lemonada", cursive;
-    margin-bottom: 20px;
-    font-size: 15px;
+.share {
+  padding-top: 1rem;
+  margin-left: 1.5rem;
 }
-.socila-media{
-    padding: 30px;
+
+.share a {
+  height: 2.3rem;
+  width: 2.3rem;
+  line-height: 2rem;
+  font-size: 1rem;
+  color:var(--blue);
+  border-radius: .5rem;
+  border:var(--border);
+  margin:.3rem;
+  text-decoration: none;
+  text-align: center;
 }
-.socila-media img{
-    margin-right: 20px;
-    cursor: pointer;
+
+.share a:hover {
+  background: var(--black);
+  color: #fff;
+}
+
+.service{
+  height: 100vh;
+  padding: 50px;
+}
+
+.service h1{
+  margin-top: 5rem;
+  text-align: center;
+}
+.service .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap:2rem;
+  margin-top: 3rem;
+}
+
+ .service .box-container .box{
+  border:var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: .5rem;
+  padding:1rem;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.service .box-container .box img{
+  height: 6rem;
+  width: 7rem;
+  border:.5rem solid #fff;
+}
+
+.service .box-container .box h3{
+  color:#111;
+  font-size: 1.3rem;
+  padding:.5rem 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.service .box-container .box .text{
+  color:var(--light-color);
+  line-height: 1;
+  font-size: 1rem;
+  padding-top: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer{
+  height: 70vh;
+  background: var(--blue);
+  padding: 0 2rem;
+}
+.footer a{
+  text-decoration: none;
+}
+.footer .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap:1rem;
+}
+
+.footer .box-container .box h3{
+  font-size: 1rem;
+  color: #fff;
+  padding: 1rem 0; 
+  font-family: "Montserrat", sans-serif;;
+}
+
+.footer .box-container .box a{
+  display: block;
+  font-size: 1rem;
+  color: #fff;
+  padding: 1rem 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer .box-container .box a i{
+  padding-right: .5rem;
+  color:var(--green);
+}
+
+.footer .box-container .box a:hover i{
+  padding-right:2rem;
+}
+
+.footer .credit{
+  padding: 1rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span{
+  color: #fff;
 }

@@ -4,31 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Natnael Demelash</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <h4>NATIDEMELASH</h4>
+        <h4>NATID.</h4>
       </div>
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#service">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <section id="home">
-      <img
-        src="assets/360_F_406916265_hxmrv7wgw9SZN9871yebxQJAX7HsHdNp.jpg"
-        width="300px"
-        alt=""
-      />
-
       <div class="info">
         <h1>FrontEnd and Mobile App Developer</h1>
         <p>
@@ -36,7 +34,10 @@
           interactive web apps. if you are a business seeking a web presence or
           an employer looking to hire, you can get in touch with me here.
         </p>
-        <a href="#" class="btn">Resume</a>
+        <!-- <a href="#" class="btn">Resume</a> -->
+        <a href="#" class="btn">
+          Resume <span class="fas fa-chevron-right"></span>
+        </a>
       </div>
 
       <img src="assets/webappimg.png" class="web" alt="" />
@@ -46,18 +47,10 @@
       <img src="assets/black-down-arrow-icon-23.jpg" width="30px" alt="" />
     </div>
 
+    <!-- About Section Start -->
     <section id="about">
-      <div class="profile">
-        <img src="assets/pp-modified.png" class="pp" width="250px" alt="" /><br />
-        <div class="socila-media">
-          <img src="assets/linkedin.svg" width="20px" alt="" />
-          <img src="assets/gmail.svg" width="20px" alt="" />
-          <img src="assets/facebook.svg" width="20px" alt="" />
-        </div>
-      </div>
-
       <div class="pi-info">
-        <h1>About Me</h1>
+        <h1 class="heading">About Me</h1>
         <p>
           Junior Web Developer specializing in front end development.
           Experienced with all stages of the development cycle for dynamic web
@@ -68,6 +61,115 @@
         <a href="#" class="btn">Resume</a>
         <a href="#" class="btn">Hire Me</a>
       </div>
+
+      <div class="profile">
+        <img
+          src="assets/pp-modified.png"
+          class="pp"
+          width="250px"
+          alt=""
+        /><br />
+        <div class="share">
+          <a href="#" class="fab fa-facebook-f"></a>
+          <a href="#" class="fab fa-twitter"></a>
+          <a href="#" class="fab fa-instagram"></a>
+          <a href="#" class="fab fa-linkedin"></a>
+        </div>
+      </div>
     </section>
+    <!-- About Section Ended -->
+
+    <!-- Servises Section start -->
+
+    <section class="service" id="service">
+      <h1 class="heading">Services</h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="assets/webdev.png" alt="" />
+          <h3>Web Development</h3>
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis
+            libero nobis rem numquam nesciunt alias sapiente minus voluptatem,
+            reiciendis consequuntur optio dolorem!
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="assets/mobapp.png" alt="" />
+          <h3>Mobile App dev't</h3>
+
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis
+            libero nobis rem numquam nesciunt alias sapiente minus voluptatem,
+            reiciendis consequuntur optio dolorem!
+          </p>
+        </div>
+
+        <div class="box">
+          <img src="assets/ui-ux.png" alt="" />
+          <h3>UI/UX Design</h3>
+
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+            sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis
+            libero nobis rem numquam nesciunt alias sapiente minus voluptatem,
+            reiciendis consequuntur optio dolorem!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servises Section Ended -->
+
+    <!-- footer section starts  -->
+
+<section class="footer">
+
+  <div class="box-container">
+
+      <div class="box">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fas fa-chevron-right"></i> home </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> about </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> service </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> contact </a>
+      </div>
+
+      <div class="box">
+          <h3>our services</h3>
+          <a href="#"> <i class="fas fa-chevron-right"></i> Web development </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> Mob app development</a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> UI/UX design </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> Networking </a>
+          <a href="#"> <i class="fas fa-chevron-right"></i> SEO </a>
+      </div>
+
+      <div class="box">
+          <h3>contact me</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +251929050548 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> natidemelo74@gmail.com </a>
+          <a href="#"> <i class="fas fa-envelope"></i> natnael@gooday.io </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Addis Ababa, Ethiopia</a>
+      </div>
+
+      <div class="box">
+          <h3>follow me</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+          <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+  </div>
+
+  <div class="credit"> created by <span>Nati Demelash</span> | all rights reserved |2021 </div>
+
+</section>
+
+<!-- footer section ends -->
+
   </body>
 </html>
